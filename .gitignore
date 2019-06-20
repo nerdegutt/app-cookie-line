@@ -4,3 +4,11 @@ build
 
 # OS specifics
 .DS_Store
+
+bin
+.vscode
+.gradle
+.enonic
+.settings
+.classpath
+.project

@@ -1,46 +1,46 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <site>
-  <config>
-    <input name="cookie-line-layout" type="ComboBox">
-        <label>Design</label>
-        <occurrences minimum="1" maximum="1" />
-        <config>
-            <option value="none">No design (implement your own)</option>
-            <option value="light">Light</option>
-            <option value="dark">Dark</option>
-        </config>
-    </input>
-    <input name="cookie-line-order" type="RadioButton">
-        <label>Button order</label>
-        <occurrences minimum="1" maximum="1" />
-        <config>
-            <option value="first">Accept button, then Read more button</option>
-            <option value="last">Read more button, then Accept button</option>
-        </config>
-        <default>first</default>
-    </input>
-    <input name="cookie-line-text-title" type="TextLine">
-        <label>Title</label>
-        <occurrences minimum="0" maximum="1" />
-    </input>
-    <input name="cookie-line-text-intro" type="TextArea">
-        <label>Introduction</label>
-        <occurrences minimum="0" maximum="1" />
-    </input>
-    <input name="cookie-line-text-accept" type="TextLine">
-        <label>Accept button text</label>
-        <occurrences minimum="1" maximum="1" />
-    </input>
-    <input name="cookie-line-text-read-more" type="TextLine">
-        <label>Read more button text</label>
-        <occurrences minimum="1" maximum="1" />
-    </input>
-    <input name="cookie-line-link" type="ContentSelector">
-        <label>Read more link</label>
-        <occurrences minimum="1" maximum="1" />
-    </input>
-  </config>
-  <filters>
-    <response-filter name="cookie-line" order="10"/>
-  </filters>
+    <form>
+        <input name="cookie-line-layout" type="ComboBox">
+            <label>Design</label>
+            <occurrences minimum="1" maximum="1" />
+            <config>
+                <option value="none">No design (implement your own)</option>
+                <option value="light">Light</option>
+                <option value="dark">Dark</option>
+            </config>
+        </input>
+        <input name="cookie-line-order" type="RadioButton">
+            <label>Button order</label>
+            <occurrences minimum="1" maximum="1" />
+            <config>
+                <option value="first">Accept button, then Read more button</option>
+                <option value="last">Read more button, then Accept button</option>
+            </config>
+            <default>first</default>
+        </input>
+        <input name="cookie-line-text-title" type="TextLine">
+            <label>Title</label>
+            <occurrences minimum="0" maximum="1" />
+        </input>
+        <input name="cookie-line-text-intro" type="TextArea">
+            <label>Introduction</label>
+            <occurrences minimum="0" maximum="1" />
+        </input>
+        <input name="cookie-line-text-accept" type="TextLine">
+            <label>Accept button text</label>
+            <occurrences minimum="1" maximum="1" />
+        </input>
+        <input name="cookie-line-text-read-more" type="TextLine">
+            <label>Read more button text</label>
+            <occurrences minimum="1" maximum="1" />
+        </input>
+        <input name="cookie-line-link" type="ContentSelector">
+            <label>Read more link</label>
+            <occurrences minimum="1" maximum="1" />
+        </input>
+    </form>
+    <processors>
+        <response-processor name="cookie-line" order="10"/>
+    </processors>
 </site>
